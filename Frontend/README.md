@@ -1,6 +1,8 @@
 # Frontend
 Dette er mappen til din frontend løsning. Det er her du skal installere og bygge din løsning på svendeprøven.
 
+Du må gerne slette eller overskrive denne readme fil med din egen.
+
 ## Opret React-app med Vite
 ```
 npm create vite@latest my-app -- --template react
