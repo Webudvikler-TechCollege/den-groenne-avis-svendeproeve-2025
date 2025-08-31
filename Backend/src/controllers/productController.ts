@@ -8,6 +8,7 @@ export const getRecords = async (req: Request, res: Response) => {
         id: true,
         name: true,
         slug: true,
+        image: true,
         price: true
       }
     });
@@ -31,6 +32,7 @@ export const getRecordsFromCategory = async (req: Request, res: Response) => {
         id: true,
         name: true,
         slug: true,
+        image: true,
         price: true
       }
     })
