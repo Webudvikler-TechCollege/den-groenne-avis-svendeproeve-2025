@@ -1,4 +1,4 @@
-export const fieldTypes: Record<string, Record<string, 'string' | 'number' | 'boolean'>> = {
+export const fieldTypes: Record<string, Record<string, 'string' | 'number' | 'boolean' | 'date' >> = {
   user: {
     id: 'number',
     firstname: 'string',
@@ -33,5 +33,10 @@ export const fieldTypes: Record<string, Record<string, 'string' | 'number' | 'bo
     slug: 'string',
     categoryId: 'number',
     userId: 'number'
+  },
+  newsletterEmail: {
+    id: 'number',
+    email: 'string',
+    createdAt: 'date'
   }
 };

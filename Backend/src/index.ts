@@ -9,6 +9,7 @@ import { commentRoutes } from './routes/commentRoutes';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import path from 'path';
+import { newsletterEmailRoutes } from './routes/newsletterEmailRoutes';
 
 dotenv.config();
 const port = process.env.SERVERPORT || 3000
@@ -27,6 +28,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/comments', commentRoutes);
+app.use('/api/newsletters', newsletterEmailRoutes);
 
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);

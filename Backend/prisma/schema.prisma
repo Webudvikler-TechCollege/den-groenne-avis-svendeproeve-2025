@@ -69,3 +69,11 @@ model Product {
 
   @@map("products")
 }
+
+model NewsletterEmail {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  createdAt DateTime @default(now())
+
+  @@map("newsletterSubscription")
+}
