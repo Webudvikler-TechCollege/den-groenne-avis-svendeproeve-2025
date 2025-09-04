@@ -10,7 +10,10 @@
     "push": "prisma db push && prisma db seed",
     "prepare": "prisma generate",
     "migrate": "prisma migrate dev",
-    "seed": "prisma db seed"
+    "seed": "prisma db seed",
+    "build": "tsc",          
+    "start": "node dist/index.js",
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "",
